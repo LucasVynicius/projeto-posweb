@@ -1,0 +1,112 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis para cores e fontes */
+:root {
+    --cor-primaria: #000; /* Cor principal (preta) */
+    --cor-secundaria: #f6f6f6; /* Cor secundária (branca) */
+    --cor-terciaria: #c9ccdbbb; /* Cor terciária (azul claro) */
+    --cor-hover: #272727; /* Cor para hover (cinza escuro) */
+
+    --fonte-principal: 'Krona One', sans-serif; /* Fonte principal */
+    --fonte-secundaria: 'Montserrat', sans-serif; /* Fonte secundária */
+}
+
+body{
+    background-image: url("/assets/fundo-preto.avif");
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+
+.menu{
+    padding: 5% 0 0 15%;
+}
+
+.menu__nav{
+    display: flex;
+    gap: 80px;
+}
+
+.menu__btn{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu__btn:hover{
+    color: var(--cor-hover);
+}
+
+.container__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 80px;
+}
+
+.container__section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+}
+
+.titulo__conteudo{
+    color: var(--cor-terciaria);
+    font-size: var(--fonte-principal);
+    font-size: 2.25rem;
+    
+}
+
+.paragrafo__conteudo{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1.35rem;
+}
+
+.img__author{
+    width: 46%;
+    height: 35%;
+    border: 5px;
+}
+
+.rodape{
+    text-align: center; /* Alinhamento do texto no rodapé */
+    color: var(--cor-primaria); /* Cor do texto do rodapé */
+    background-color: var(--cor-terciaria); /* Cor de fundo do rodapé */
+    padding: 24px; /* Preenchimento do rodapé */
+    font-family: var(--fonte-secundaria); /* Fonte do texto do rodapé */
+    font-size: 1.5rem; /* Tamanho da fonte do texto do rodapé */
+    font-weight: 400; /* Peso da fonte do texto do rodapé */
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media(max-width: 1200px){
+    .menu {
+        padding: 10%; /* Preenchimento do menu */
+     }
+ 
+     .menu__nav {
+         justify-content: center; /* Centraliza os itens do menu */
+     }
+ 
+     .container__main {
+         flex-direction: column-reverse; /* Inverte a direção dos elementos na seção principal */
+         padding: 5%; /* Preenchimento da seção principal */
+     }
+ 
+     .container__section {
+        width: auto; /* Largura automática do conteúdo principal */
+     }
+}
