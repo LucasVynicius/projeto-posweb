@@ -10,7 +10,7 @@
 :root {
     --cor-primaria: #000; /* Cor principal (preta) */
     --cor-secundaria: #f6f6f6; /* Cor secundária (branca) */
-    --cor-terciaria: #c9ccdbbb; /* Cor terciária (azul claro) */
+    --cor-terciaria: #06e62b; /* Cor terciária (azul claro) */
     --cor-hover: #272727; /* Cor para hover (cinza escuro) */
 
     --fonte-principal: 'Krona One', sans-serif; /* Fonte principal */
@@ -74,7 +74,7 @@ body{
 .img__author{
     width: 46%;
     height: 35%;
-    border: 5px;
+    border-radius: 10px;
 }
 
 .rodape{
